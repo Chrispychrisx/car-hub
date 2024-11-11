@@ -1,0 +1,24 @@
+.one{
+    width: 50%;
+    height: 30vh;
+    margin: auto;
+    background: blue;
+}
+
+.two{
+    width: 50%;
+    height: 30vh;
+    margin: auto;
+    background-color: burlywood;
+}
+
+.main{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem;
+}
+
+.detail_if{
+    align-content: left;
+}
