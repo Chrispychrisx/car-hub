@@ -21,12 +21,15 @@ a {
     text-decoration: none!important;
 }
 
-.all{
-    background-color: #eee;
-    color: var(--color-light);
-    transition: all 0.5s ease-in-out;
+*{
+    /* background: var(--color-bg-light); */
 }
 
+.all{
+    background-color: #eee;
+    color: var(--color-dark);
+    transition: all 0.5s ease-in-out;
+}
 .all-dark-text {
     background-color: var(--color-bg-dark);
     color: var(--color-light);
@@ -34,13 +37,9 @@ a {
 }
 
 .btn-dark-light {
-    background: #5551519a!important;
+    background:#5551519a!important;
     color: var(--color-light-gray)!important;
 }
-*{
-    /* background: var(--color-bg-light); */
-}
-
 
 
 .container-div {
@@ -83,25 +82,30 @@ a {
 
 /* CONTENT */
 .main {
-    /* background: var(--color-bg-light); */
     display: flex;
     gap: 12px;
     background: var(--color-bg-light);
     color: var(--color-dark);
-    transition: all o.5s ease-in-out;
-}
-
-.main-dark{
-    background: var(--color-bg-dark);
     transition: all 0.5s ease-in-out;
 }
+.main-dark {
+    background: var(--color-bg-dark);
+    color: var(--color-light);
+    transition: all 0.5s ease-in-out;
+}
+
+.card-dark {
+    background: var(--color-card-dark);
+    color: var(--color-light);
+    transition: all 0.5s ease-in-out;
+}
+
 .left-menu {
     width: 20vw;
     margin: 1rem 1rem 1rem 0rem;
-    background: var(--color-light);
+    background: var(--color-card-light);
     transition: all 0.5s ease-in-out;
 }
-
 .left-menu-dark{
     background: var(--color-card-dark);
     color: var(--color-light);
@@ -109,7 +113,6 @@ a {
 }
 .menu-links {
     min-height: 87vh;
-    background: var(--color-card-light);
     border-radius: 1rem;
 }
 .content {
@@ -132,8 +135,10 @@ a {
     border-left: 0.5rem solid var(--color-primary);
     border-top-left-radius: 0.4rem;
     border-bottom-left-radius: 0.4rem;
-    transition: all 0.5s ease-in-out;;
+    transition: all 0.5s ease-in-out;
 }
+
+
 
 
 /* CAR GRID */
@@ -146,8 +151,7 @@ a {
     cursor: pointer;
     transition: all 0.5s ease-in-out;
 }
-
-.car-div-dark{
+.car-div-dark {
     background: var(--color-card-dark);
     color: var(--color-light);
     transition: all 0.5s ease-in-out;
@@ -157,7 +161,6 @@ a {
     background: rgb(245, 245, 245);
     transition: all ease-in-out 0.5m;
 }
-
 .car-div-dark:hover {
     background: rgb(31, 30, 30);
     transition: all ease-in-out 0.5m;
@@ -207,7 +210,6 @@ a {
     color: var(--color-dark);
     transition: all 0.5s ease-in-out;
 }
-
 .hero-dark{
     background: var(--color-card-dark);
     color: var(--color-light);
@@ -223,21 +225,21 @@ a {
 }
 
 .modal-content-dark {
-    background: var(--color-card-light)!important;
-    color: var(--color-dark)!important;
+    background: var(--color-card-dark)!important;
+    color: var(--color-light)!important;
     transition: all ease-in-out 0.5m;
 }
 .modal-body {
     background: var(--color-card-light)!important;
     color: var(--color-dark)!important;
-    transition: all ease-in-out;
+    transition: all ease-in-out 0.5m;
 }
-
 .modal-body-dark {
     background: var(--color-card-light)!important;
     color: var(--color-light)!important;
     transition: all ease-in-out 0.5m;
 }
+
 
 /* MODAL */
 .purchase-btn {
@@ -293,26 +295,24 @@ a {
 
 
 /* MEDIA QUERY */
-/* TARGETING BIG SCREEN */
-@media screen and (max-width: 1200px){
+/* TARGATING BIG SCREEN */
+@media screen and (max-width: 1200px) {
     .container-div{
-        width: 90% !important
-        margin:auto;
+        width: 90%;
+        margin: auto;
         transition: all 0.5s ease-in-out;
     }
 }
 
-
-@media screen and (max-width: 999px){
+@media screen and (max-width: 999px) {
     .container-div{
         width: 94%;
-        margin:auto;
+        margin: auto;
         transition: all 0.5s ease-in-out;
     }
     .hero{
         display: block;
     }
-
     .link-name{
         display: none;
     }
@@ -321,42 +321,27 @@ a {
         display: flex;
         justify-content: center;
     }
-
-    .left-menu-dark{
-        background: var(--color-card-dark);
-        color: var(--color-light);
-        transition: all 0.5s ease-in-out;
-    }
-
 }
 
-/* TARGETTING BIG TABLETS */
-
-@media screen and (max-width: 768px){
+/* TARGETTING BIG TABLETS  */
+@media screen and (max-width: 768px) {
     .container-div{
         width: 100%;
-        margin:auto;
         transition: all 0.5s ease-in-out;
     }
-
     .search-div{
         display: none;
     }
 }
 
-/* TARGETTING SMALL PHONES */
-
-@media screen and (max-width: 768px){
+/* TARGETTING SMALL PHONE */
+@media screen and (max-width: 576px) {
     .car-div{
-        height: 14rem;
-        margin: auto;
-
     }
     .car-div img {
-        border-radius: o.5rem;
         width: 80%;
+        height: 18rem;
         margin: auto;
-        height: 8rem;
-        object-fit: contain;
+        object-fit: fill;
+    }
 }
-    
