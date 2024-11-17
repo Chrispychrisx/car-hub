@@ -15,6 +15,8 @@ body {
     padding: 0 10px;
 }
 
+
+
 body::before{
     content: "";
     position: absolute;
@@ -26,11 +28,11 @@ body::before{
 }
 
 .container{
-    width: 100%;
+    width: 50%!important;
     border-radius: 8px;
     padding: 30px;
     text-align: center;
-    border: 1px solid rgba(225, 225, 225,0.15);
+    border: 1px solid;
     backdrop-filter: blur(15px);
     --webkit-backdrop-filter: blur(15px);
 }
@@ -56,8 +58,8 @@ h2{
     position: absolute;
     top: 5%;
     left: 0%;
+    color: #b09cb8;
     transform: translateY(-50%);
-    color: #b73fe3;
     font-size: 16px;
     pointer-events: none;
     transition: 0.15s ease;
@@ -123,7 +125,13 @@ button{
 button:hover{
     color: #fff;
     background-color: rgba(225, 225, 225,0.36);
-    
 
+}
 
+.register {
+}
+
+.register p{
+    font-size: 16px;
+    color: #dcc0c0;
 }
